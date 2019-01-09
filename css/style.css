@@ -1,1 +1,180 @@
-/* Initial archive */
+/* Resets */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5f6f5;
+}
+
+/* Cabeçalho */
+
+#header-superior {
+    height: 70px;
+    /* ajuste para o menu ficar centralizado na vertical */
+    line-height: 70px;
+    /* espaçamento em cada lado do cabeçalho */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#header-superior #header-superior-logo {
+    float: left;
+}
+
+#header-superior #header-superior-links {
+    float: right
+}
+
+#header-central {
+    height: 293px;
+}
+
+#header-central #header-central-mais-procurados {
+    height: 25px;
+    margin-top: 12px;
+}
+
+.title {
+    line-height: 1.15;
+    font-size: 50px;
+}
+
+.sub-title {
+    line-height: 1.4;
+}
+
+/* Formatação para menu horizontal */
+
+.menu-horizontal ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.menu-horizontal ul li {
+    display: inline;
+}
+
+.menu-horizontal ul li a {
+    font-size: 15px;
+    padding-left: 25px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Formatacao da parte de buscas */
+
+#header-central {
+    width: 780px;
+    margin: 0 auto;
+    padding: 90px 0;
+}
+
+#header-central #form-busca {
+    margin-top: 36px;
+    background-color: rgba(0, 0, 0, .3);
+    padding: 10px;
+}
+
+.row-condensed {
+    margin-right: -6px;
+    margin-left: -6px;
+}
+
+#header-central .input-search {
+    width: 66.66667%;
+    height: 60px;
+    line-height: 30px;
+    font-size: 18px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #efefef;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #5f656d;
+}
+
+#header-central #btn-buscar {
+    width: 32%;
+    height: 60px;
+    line-height: 30px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #4a86f8;
+}
+
+.label-procurados {
+    float: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Rodape */
+
+#header-inferior {
+    background: #fff;
+    height: 40px;
+    padding: 10px;
+    line-height: 40px;
+}
+
+#header-inferior #header-inferior-menu-categorias #menu-categorias {
+    margin: 0 auto;
+    width: 400px;
+}
+
+#header-inferior #header-inferior-menu-categorias ul li {
+    margin: 0 15px;
+}
+
+#header-inferior #header-inferior-menu-categorias ul li a {
+    color: #5f656d;
+}
+
+/* video Header */
+
+.video-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.video-background .fullscreen-bg {
+    position: absolute;
+    top: 0;
+    background-size: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.header-component {
+    position: relative;
+}
+
+.background-overlay {
+	position: absolute;
+    background-color: rgba(53,59,66,.5);
+    width: 100%;
+    height: 100%;	
+    top: 0;
+}
+
+.fullscreen-bg-video {
+    background-size: 100%;
+    width: 100%;
+    height: auto;
+}
+
+#header a, #header span, #header h1, #header h2 {
+    color: white;
+}

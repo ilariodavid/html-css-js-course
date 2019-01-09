@@ -4,13 +4,30 @@
 <head>
     <meta charset="utf-8" />
     <title> Projeto </title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
+    <header id="header" class="header-component">
 
-        <div id="header-superior">
+        <div class="video-background">
+
+            <div class="fullscreen-bg">
+
+                <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg-video">			
+                    <source data-src="video.mp4" src="video/homepage.mp4" type="video/mp4">
+                    <source data-src="video.ogv" src="video/homepage.ogv" type="video/ogv">
+                    <source data-src="video.webm" src="video/homepage.webm" type="video/webm">
+                </video>
+                
+                <div class="background-overlay"></div>
+                    
+            </div>
+        </div>
+
+        <div id="header-superior" class="header-component">
 
             <div id="header-superior-logo">
 
@@ -22,7 +39,7 @@
 
             <div id="header-superior-links">
 
-                <nav>
+                <nav id="menu-links-header" class="menu-horizontal">
                     <ul>
                         <li>
                             <a href="#">Explorar</a>
@@ -46,20 +63,27 @@
 
         </div>
 
-        <div id="header-central">
+        <div id="header-central" class="header-component">
 
             <div id="header-central-pesquisa">
 
-                <form>
-                    <input type="search" name="search" id="search" placeholder="Digite aqui o serviço" />
-                    <button>Buscar</button>
+                <div class="text-center">
+
+                    <h1 class="title">Considere feito</h1>
+                    <h2 class="sub-title">Do jardineiro ao pintor, encontre o melhor Profissional para todos os seus projetos</h2>
+
+                </div>
+
+                <form id="form-busca">
+                    <input type="search" name="search" id="search" class="input-search" placeholder="Digite aqui o serviço" />
+                    <button id="btn-buscar">Buscar</button>
                 </form>
 
             </div>
 
-            <div id="header-central-mais-procurados">
+            <div id="header-central-mais-procurados" class="menu-horizontal">
 
-                <span>Mais Procurados: </span>
+                <span class="label-procurados">Mais Procurados: </span>
 
                 <ul>
                     <li>
@@ -83,11 +107,11 @@
 
         </div>
 
-        <div id="header-inferior">
+        <div id="header-inferior" class="header-component">
 
             <div id="header-inferior-menu-categorias">
 
-                <nav>
+                <nav id="menu-categorias" class="menu-horizontal">
                     <ul>
                         <li>
                             <a href="#">Casa</a>
