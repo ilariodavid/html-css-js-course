@@ -16,14 +16,14 @@
 
             <div class="fullscreen-bg">
 
-                <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg-video">			
+                <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg-video">
                     <source data-src="video.mp4" src="video/homepage.mp4" type="video/mp4">
                     <source data-src="video.ogv" src="video/homepage.ogv" type="video/ogv">
                     <source data-src="video.webm" src="video/homepage.webm" type="video/webm">
                 </video>
-                
+
                 <div class="background-overlay"></div>
-                    
+
             </div>
         </div>
 
@@ -189,9 +189,9 @@
 
             <h2>Explorar Categorias</h2>
 
-            <div id="listagem-categorias">
+            <div id="listagem-categorias" class="menu-horizontal">
                 <ul>
-                    <li>
+                    <li class="ativo">
                         <a href="#">Eventos</a>
                     </li>
 
@@ -257,42 +257,64 @@
         <!-- Fim Categorias -->
 
         <!-- Inicio Depoimentos -->
-        <section>
+        <section id="area-depoimentos">
 
-            <h3> Depoimentos </h3>
+            <h3> O que nossa comunidade está dizendo </h3>
 
             <div id="depoimentos">
 
-                <figure class="depoimento">
+                <div class="depoimento-container">
+                    <figure class="depoimento">
 
-                    <img src="img/Tim-Berners-Lee.jpg" alt="Um Cliente muito satisfeito" />
+                        <img src="img/Tim-Berners-Lee.jpg" alt="Um Cliente muito satisfeito" class="principal" />
 
-                    <figcaption>
-                        <h2>Tim Berners-Lee</h2>
-                        <h4>Organizou uma festa de aniversário</h4>
-                        <blockquote>Eu postei meu pedido em menos de 2 minutos e, em duas horas, 4 bufês me enviaram orçamentos.
-                        </blockquote>
-                    </figcaption>
-                </figure>
+                        <figcaption>
 
-                <figure class="depoimento">
+                            <img src="img/wave.svg" alt="Um efeito de onda" class="wave" />
+                            
+                            <img src="img/quotes-pink.svg" alt="Efeito de citacao" class="quote"/>
+                            
+                            <blockquote>Eu postei meu pedido em menos de 2 minutos e, em duas horas, 4 bufês me enviaram orçamentos.
+                            </blockquote>
 
-                    <img src="img/mark-zuckerberg.jpg" alt="Um Profissional muito satisfeito" />
+                            <h2>Tim Berners-Lee</h2>
+                            <h4>Organizou uma festa de aniversário</h4>
+                        </figcaption>
 
-                    <figcaption>
-                        <h2>Mark Zuckerberg</h2>
-                        <h4>É um saxofonista</h4>
-                        <blockquote>O portal me ajusta a encontrar clientes em Horizontina quando eu estou no Brasil e isso é ótimo.
-                        </blockquote>
-                    </figcaption>
-                </figure>
-
-                <div class="mais-depoimentos">
-                    <img src="img/read-more.svg" alt="Saiba mais">
-                    <span>Encontre mais casos de sucesso</span>
-                    <button>Saiba mais</button>
+                    </figure>
                 </div>
 
+                <div class="depoimento-container">
+                    <figure class="depoimento">
+
+                        <img src="img/mark-zuckerberg.jpg" alt="Um Profissional muito satisfeito" class="principal"/>
+
+                        <figcaption>
+
+                            <img src="img/wave.svg" alt="Um efeito de onda" class="wave" />
+
+                            <img src="img/quotes-yellow.svg" alt="Efeito de citacao" class="quote"/>
+
+                            <blockquote>O portal me ajuda a encontrar clientes em Horizontina quando eu estou no Brasil e isso é ótimo.
+                            </blockquote>
+
+                            <h2>Mark Zuckerberg</h2>
+                            <h4>É um saxofonista</h4>                            
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="depoimento-container mais-depoimentos">
+                    <figure class="depoimento">
+
+                        <img src="img/read-more.svg" alt="Saiba mais" class="principal"/>
+
+                        <figcaption>
+                            <span>Encontre mais casos de sucesso</span>
+                            <button>Saiba mais</button>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
 
         </section>
@@ -301,7 +323,7 @@
     </main>
 
     <!-- Inicio Rodape -->
-    <footer>
+    <footer id="footer">
         <nav>
             <div>
                 <span>Empresa</span>
@@ -364,7 +386,7 @@
             </div>
         </div>
 
-        <hr />
+        <hr id="separador" />
 
         <div class="stars">
             <img src="img/star-rating.svg" alt="Star Rating" />
@@ -374,7 +396,7 @@
             <img src="img/star-rating.svg" alt="Star Rating" />
         </div>
 
-        <span>Copyright © - Todos os direitos reservados.</span>
+        <span id="copyright">Copyright © - Todos os direitos reservados.</span>
 
 
     </footer>

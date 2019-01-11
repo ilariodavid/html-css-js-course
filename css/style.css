@@ -1,11 +1,16 @@
 /* Resets */
 
-* {
+*, :after, :before {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
+    min-height: 100vh;
+    color: #5f656d;
+    font-size: 15px;
+    font-weight: 400;
     background-color: #f5f6f5;
 }
 
@@ -26,10 +31,6 @@ body {
 
 #header-superior #header-superior-links {
     float: right
-}
-
-#header-central {
-    height: 293px;
 }
 
 #header-central #header-central-mais-procurados {
@@ -120,7 +121,6 @@ body {
 
 #header-inferior {
     background: #fff;
-    height: 40px;
     padding: 10px;
     line-height: 40px;
 }
@@ -162,10 +162,10 @@ body {
 }
 
 .background-overlay {
-	position: absolute;
-    background-color: rgba(53,59,66,.5);
+    position: absolute;
+    background-color: rgba(53, 59, 66, .5);
     width: 100%;
-    height: 100%;	
+    height: 100%;
     top: 0;
 }
 
@@ -177,4 +177,302 @@ body {
 
 #header a, #header span, #header h1, #header h2 {
     color: white;
+}
+
+/* Serviços Populares */
+
+section {
+    clear: both;
+}
+
+#servicos-populares {
+    padding-top: 35px;
+}
+
+#servicos-populares h2 {
+    margin: 30px 0;
+    text-align: center;
+    line-height: 29px;
+    font-size: 24px;
+}
+
+#servicos-populares-imagens {
+    width: 1025px;
+    margin: 0 auto;
+}
+
+#servicos-populares-imagens .container-servico-popular {
+    width: 321.667px;
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #5f656d;
+}
+
+#servicos-populares-imagens .container-servico-popular img {
+    margin-bottom: 0;
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+#servicos-populares-imagens .container-servico-popular .container-servico-popular-descricao span {
+    display: block;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+#servicos-populares-imagens .container-servico-popular .container-servico-popular-descricao span:nth-child(2) {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#servicos-populares-imagens .container-servico-popular .container-servico-popular-descricao span:nth-child(3) {
+    font-size: 13px;
+}
+
+/* categorias */
+
+#categorias {
+    width: 1045px;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+#categorias h2 {
+    visibility: none;
+    opacity: 0;
+}
+
+#categorias #listagem-categorias {
+    width: 435px;
+    margin: 15px auto;
+}
+
+#categorias ul li {
+    font-size: 18px;
+    margin: 0 15px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#categorias ul li a {
+    color: #5f656d;
+    padding: 0;
+    margin: 0 15px;
+    padding-bottom: 10px;
+}
+
+#categorias ul li.ativo {
+    border-bottom: 2px solid #4a86f8;
+}
+
+#categorias ul li.ativo a {
+    color: #4a86f8;
+}
+
+#categorias .container-categoria {
+    height: 270px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    padding: 0 12.5px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+#categorias .container-categoria img {
+    width: 100%;
+}
+
+#categorias .container-categoria.caterogia-1x {
+    width: 33%;
+}
+
+#categorias .container-categoria.caterogia-2x {
+    width: 66%;
+}
+
+#categorias .container-categoria.caterogia-1x img {
+    height: 200px;
+}
+
+#categorias .container-categoria-descricao span {
+    display: block;
+    color: #5f656d;
+}
+
+#categorias .container-categoria-descricao span:nth-child(1) {
+    margin-top: 12px;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+#categorias .container-categoria-descricao span:nth-child(2) {
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+/* Depoimentos */
+
+#area-depoimentos {
+    width: 1045px;
+    height: 685px;
+    padding: 50px 0 0 0;
+    margin: 0 auto;
+}
+
+#area-depoimentos h3 {
+    font-size: 38px;
+    text-align: center;
+    padding-right: 12.5px;
+    padding-left: 12.5px;
+}
+
+#depoimentos {
+    margin-top: 36px;
+}
+
+.depoimento-container {
+    width: 33%;
+    float: left;
+    position: relative;
+    padding-right: 12.5px;
+    padding-left: 12.5px;
+    min-height: 1px;
+    height: 500px;
+}
+
+.depoimento-container .depoimento {
+    background: #ffffff;
+}
+
+.depoimento-container .depoimento .principal {
+    width: 100%;
+}
+
+.depoimento-container .depoimento figcaption {
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    min-height: 280px;
+}
+
+.depoimento-container .depoimento .wave {
+    position: absolute;
+    top: 157px;
+    left: 13px;
+    width: 319px;
+}
+
+.depoimento-container .depoimento blockquote {
+    margin-top: 24px;
+    margin-bottom: 50px;
+    line-height: 1.7;
+}
+
+.depoimento-container .depoimento figcaption span {
+    color: #51555a;
+    font-weight: 400;
+    text-rendering: optimizelegibility;
+    line-height: 1.4;
+    font-size: 24px;
+    margin-top: 12px;
+}
+
+.depoimento-container .depoimento figcaption button {
+    width: 180px;
+    height: 50px;
+    display: block;
+    padding: 15px;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #4a86f8;
+    margin: 72px auto 0 auto;
+    font-size: 15px;
+}
+
+.mais-depoimentos {
+    border: 1px solid #d4d8dc;
+}
+
+.mais-depoimentos .depoimento {
+    background: transparent;
+}
+
+.mais-depoimentos figcaption {
+    text-align: center;
+}
+
+.mais-depoimentos figure figcaption {
+    height: 260px;
+}
+
+/* Rodape */
+
+#footer {
+    clear: both;
+    font-size: 18px;
+    margin-top: 30px;
+    padding: 40px 15px;
+    background-color: #51555a;
+    color: #9b9b9b;
+    text-align: center;
+}
+
+#footer nav {
+    text-align: left;
+}
+
+#footer nav div {
+    width: 25%;
+    float: left;
+    position: relative;
+    padding-right: 12.5px;
+    padding-left: 12.5px;
+    min-height: 1px;
+}
+
+#footer nav div ul {
+    list-style: none;
+    line-height: 1.5;
+}
+
+#footer nav div a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#footer #map {
+    clear: both;
+}
+
+#footer .social a{
+    text-decoration: none;
+}
+
+#footer #separador {
+    clear: both;    
+    width: 60%;    
+    margin: 110px auto 0 auto;
+    opacity: .32;
+    background-color: #c3c3c3;
+}
+
+#footer .stars {
+    margin-top: 30px;
+}
+
+#footer #copyright{
+    color: #fff;
 }
