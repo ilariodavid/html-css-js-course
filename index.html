@@ -6,6 +6,9 @@
     <title> Projeto </title>
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+    <script src="js/app.js"></script>
 </head>
 
 <body>
@@ -63,7 +66,7 @@
 
         </div>
 
-        <div id="header-central" class="header-component">
+        <div id="header-central" class="header-component bounceIn animated">
 
             <div id="header-central-pesquisa">
 
@@ -192,64 +195,200 @@
             <div id="listagem-categorias" class="menu-horizontal">
                 <ul>
                     <li class="ativo">
-                        <a href="#">Eventos</a>
+                        <a href="#categoria-eventos">Eventos</a>
                     </li>
 
                     <li>
-                        <a href="#">Casa</a>
+                        <a href="#categoria-casa">Casa</a>
                     </li>
 
                     <li>
-                        <a href="#">Automotiva</a>
+                        <a href="#categoria-automotiva">Automotiva</a>
                     </li>
 
                     <li>
-                        <a href="#">Aulas</a>
+                        <a href="#categoria-aulas">Aulas</a>
                     </li>
                 </ul>
             </div>
 
             <div id="container-categorias-images">
 
-                <a href="#" class="container-categoria caterogia-2x">
-                    <img src="img/bg-events.jpg" alt="Imagem de DJ" />
-                </a>
+                <div id="categoria-eventos" class="box-categorias animated fadeInUp">
 
-                <a href="#" class="container-categoria caterogia-1x">
-                    <img src="img/fotografia.jpg" alt="Imagem de Fotografia" />
+                    <a href="#" class="container-categoria caterogia-2x">
+                        <img src="img/bg-events.jpg" alt="Imagem de DJ" />
+                    </a>
 
-                    <div class="container-categoria-descricao">
-                        <span>Fotografia de casamento</span>
-                        <span>7 profissionais perto de você</span>
-                    </div>
-                </a>
+                    <a href="#" class="container-categoria caterogia-1x">
+                        <img src="img/fotografia.jpg" alt="Imagem de Fotografia" />
 
-                <a href="#" class="container-categoria caterogia-1x">
-                    <img src="img/buffet.jpg" alt="Imagem de buffet" />
+                        <div class="container-categoria-descricao">
+                            <span>Fotografia de casamento</span>
+                            <span>7 profissionais perto de você</span>
+                        </div>
+                    </a>
 
-                    <div class="container-categoria-descricao">
-                        <span>Serviço de buffet</span>
-                        <span>5 profissionais perto de você</span>
-                    </div>
-                </a>
+                    <a href="#" class="container-categoria caterogia-1x">
+                        <img src="img/buffet.jpg" alt="Imagem de buffet" />
 
-                <a href="#" class="container-categoria caterogia-1x">
-                    <img src="img/dj.jpg" alt="Imagem de Dj" />
+                        <div class="container-categoria-descricao">
+                            <span>Serviço de buffet</span>
+                            <span>5 profissionais perto de você</span>
+                        </div>
+                    </a>
 
-                    <div class="container-categoria-descricao">
-                        <span>Serviço de Dj</span>
-                        <span>1 profissional perto de você</span>
-                    </div>
-                </a>
+                    <a href="#" class="container-categoria caterogia-1x">
+                        <img src="img/dj.jpg" alt="Imagem de Dj" />
 
-                <a href="#" class="container-categoria caterogia-1x">
-                    <img src="img/magico.jpg" alt="Imagem de Mágico" />
+                        <div class="container-categoria-descricao">
+                            <span>Serviço de Dj</span>
+                            <span>1 profissional perto de você</span>
+                        </div>
+                    </a>
 
-                    <div class="container-categoria-descricao">
-                        <span>Mágico</span>
-                        <span>2 profissionais perto de você</span>
-                    </div>
-                </a>
+                    <a href="#" class="container-categoria caterogia-1x">
+                        <img src="img/magico.jpg" alt="Imagem de Mágico" />
+
+                        <div class="container-categoria-descricao">
+                            <span>Mágico</span>
+                            <span>2 profissionais perto de você</span>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div id="categoria-casa" class="box-categorias animatable fadeInUp">
+
+                    <a href="#" class="container-categoria caterogia-2x">
+                        <img src="img/reformas-e-reparos.jpg" alt="Imagem de reformas e reparos" />
+                    </a>
+
+                    <a href="#" class="container-categoria caterogia-1x">
+                        <img src="img/encanador.jpg" alt="Imagem de Encanador" />
+
+                        <div class="container-categoria-descricao">
+                            <span>Encanador</span>
+                            <span>7 profissionais perto de você</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="container-categoria caterogia-1x">
+                        <img src="img/especialista-corte-grama.jpg" alt="Imagem de especialista Corte Grama" />
+
+                        <div class="container-categoria-descricao">
+                            <span>Especialista em corte de Grama</span>
+                            <span>5 profissionais perto de você</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="container-categoria caterogia-1x">
+                        <img src="img/paisagista.jpg" alt="Imagem de Paisagista" />
+
+                        <div class="container-categoria-descricao">
+                            <span>Paisagista</span>
+                            <span>1 profissional perto de você</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="container-categoria caterogia-1x">
+                        <img src="img/reformas-e-reparos.jpg" alt="Imagem de reformas e reparos" />
+
+                        <div class="container-categoria-descricao">
+                            <span>Reformas e Reparos</span>
+                            <span>2 profissionais perto de você</span>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div id="categoria-automotiva" class="box-categorias animatable fadeInUp">
+
+                    <a href="#" class="container-categoria caterogia-2x">
+                        <img src="img/bg-events.jpg" alt="Imagem de DJ" />
+                    </a>
+
+                    <a href="#" class="container-categoria caterogia-1x">
+                        <img src="img/fotografia.jpg" alt="Imagem de Fotografia" />
+
+                        <div class="container-categoria-descricao">
+                            <span>Fotografia de casamento</span>
+                            <span>7 profissionais perto de você</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="container-categoria caterogia-1x">
+                        <img src="img/buffet.jpg" alt="Imagem de buffet" />
+
+                        <div class="container-categoria-descricao">
+                            <span>Serviço de buffet</span>
+                            <span>5 profissionais perto de você</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="container-categoria caterogia-1x">
+                        <img src="img/dj.jpg" alt="Imagem de Dj" />
+
+                        <div class="container-categoria-descricao">
+                            <span>Serviço de Dj</span>
+                            <span>1 profissional perto de você</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="container-categoria caterogia-1x">
+                        <img src="img/magico.jpg" alt="Imagem de Mágico" />
+
+                        <div class="container-categoria-descricao">
+                            <span>Mágico</span>
+                            <span>2 profissionais perto de você</span>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div id="categoria-aulas" class="box-categorias animatable fadeInUp">
+
+                    <a href="#" class="container-categoria caterogia-2x">
+                        <img src="img/bg-events.jpg" alt="Imagem de DJ" />
+                    </a>
+
+                    <a href="#" class="container-categoria caterogia-1x">
+                        <img src="img/fotografia.jpg" alt="Imagem de Fotografia" />
+
+                        <div class="container-categoria-descricao">
+                            <span>Fotografia de casamento</span>
+                            <span>7 profissionais perto de você</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="container-categoria caterogia-1x">
+                        <img src="img/buffet.jpg" alt="Imagem de buffet" />
+
+                        <div class="container-categoria-descricao">
+                            <span>Serviço de buffet</span>
+                            <span>5 profissionais perto de você</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="container-categoria caterogia-1x">
+                        <img src="img/dj.jpg" alt="Imagem de Dj" />
+
+                        <div class="container-categoria-descricao">
+                            <span>Serviço de Dj</span>
+                            <span>1 profissional perto de você</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="container-categoria caterogia-1x">
+                        <img src="img/magico.jpg" alt="Imagem de Mágico" />
+
+                        <div class="container-categoria-descricao">
+                            <span>Mágico</span>
+                            <span>2 profissionais perto de você</span>
+                        </div>
+                    </a>
+
+                </div>
 
             </div>
 
@@ -263,7 +402,7 @@
 
             <div id="depoimentos">
 
-                <div class="depoimento-container">
+                <div class="depoimento-container animatable fadeInDown">
                     <figure class="depoimento">
 
                         <img src="img/Tim-Berners-Lee.jpg" alt="Um Cliente muito satisfeito" class="principal" />
@@ -271,9 +410,9 @@
                         <figcaption>
 
                             <img src="img/wave.svg" alt="Um efeito de onda" class="wave" />
-                            
-                            <img src="img/quotes-pink.svg" alt="Efeito de citacao" class="quote"/>
-                            
+
+                            <img src="img/quotes-pink.svg" alt="Efeito de citacao" class="quote" />
+
                             <blockquote>Eu postei meu pedido em menos de 2 minutos e, em duas horas, 4 bufês me enviaram orçamentos.
                             </blockquote>
 
@@ -284,30 +423,30 @@
                     </figure>
                 </div>
 
-                <div class="depoimento-container">
+                <div class="depoimento-container animatable fadeInUp">
                     <figure class="depoimento">
 
-                        <img src="img/mark-zuckerberg.jpg" alt="Um Profissional muito satisfeito" class="principal"/>
+                        <img src="img/mark-zuckerberg.jpg" alt="Um Profissional muito satisfeito" class="principal" />
 
                         <figcaption>
 
                             <img src="img/wave.svg" alt="Um efeito de onda" class="wave" />
 
-                            <img src="img/quotes-yellow.svg" alt="Efeito de citacao" class="quote"/>
+                            <img src="img/quotes-yellow.svg" alt="Efeito de citacao" class="quote" />
 
                             <blockquote>O portal me ajuda a encontrar clientes em Horizontina quando eu estou no Brasil e isso é ótimo.
                             </blockquote>
 
                             <h2>Mark Zuckerberg</h2>
-                            <h4>É um saxofonista</h4>                            
+                            <h4>É um saxofonista</h4>
                         </figcaption>
                     </figure>
                 </div>
 
-                <div class="depoimento-container mais-depoimentos">
+                <div class="depoimento-container mais-depoimentos animatable bounceIn">
                     <figure class="depoimento">
 
-                        <img src="img/read-more.svg" alt="Saiba mais" class="principal"/>
+                        <img src="img/read-more.svg" alt="Saiba mais" class="principal" />
 
                         <figcaption>
                             <span>Encontre mais casos de sucesso</span>
@@ -372,16 +511,16 @@
 
             <div class="social">
                 <a href="#">
-                    <img src="img/social/facebook.svg" alt="Facebook Logo" />
+                    <img src="img/social/facebook-white.svg" alt="Facebook Logo" />
                 </a>
                 <a href="#">
-                    <img src="img/social/instagram.svg" alt="Instagram Logo" />
+                    <img src="img/social/instagram-white.svg" alt="Instagram Logo" />
                 </a>
                 <a href="#">
-                    <img src="img/social/youtube.svg" alt="Youtube Logo" />
+                    <img src="img/social/youtube-white.svg" alt="Youtube Logo" />
                 </a>
                 <a href="#">
-                    <img src="img/social/twitter.svg" alt="Twitter Logo" />
+                    <img src="img/social/twitter-white.svg" alt="Twitter Logo" />
                 </a>
             </div>
         </div>
@@ -389,11 +528,11 @@
         <hr id="separador" />
 
         <div class="stars">
-            <img src="img/star-rating.svg" alt="Star Rating" />
-            <img src="img/star-rating.svg" alt="Star Rating" />
-            <img src="img/star-rating.svg" alt="Star Rating" />
-            <img src="img/star-rating.svg" alt="Star Rating" />
-            <img src="img/star-rating.svg" alt="Star Rating" />
+            <img src="img/star-rating-blue.svg" alt="Star Rating" />
+            <img src="img/star-rating-blue.svg" alt="Star Rating" />
+            <img src="img/star-rating-blue.svg" alt="Star Rating" />
+            <img src="img/star-rating-blue.svg" alt="Star Rating" />
+            <img src="img/star-rating-blue.svg" alt="Star Rating" />
         </div>
 
         <span id="copyright">Copyright © - Todos os direitos reservados.</span>
@@ -401,6 +540,28 @@
 
     </footer>
     <!-- Fim Rodape -->
+
+    <div class="header-sticky fadeInDown animatable">
+
+        <div class="logo">
+            <a href="#">
+                <img src="img/logo-azul.svg" alt="Logotipo do Site" />
+            </a>
+        </div>
+
+        <div class="header-sticky-busca">
+
+            <form id="header-sticky-form-busca">
+                <input type="search" name="search" id="header-sticky-search" class="input-search" placeholder="Digite aqui o serviço">
+                <button id="header-sticky-btn-buscar">Buscar</button>
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script>Portal.Init(document);</script>
 
 </body>
 
